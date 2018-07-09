@@ -20,7 +20,7 @@ def alphabetize(arr)
         c2 = alpha_hash[b[idx]]
         if c1==nil || c2 == nil
           idx+=1
-          continue
+          next
         end
         puts "#{a[idx]},  #{c1} ,#{b[idx]},#{c2}"
         if c1 < c2
