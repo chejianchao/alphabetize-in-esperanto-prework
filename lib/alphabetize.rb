@@ -20,7 +20,7 @@ def alphabetize(arr)
         end
       end
       idx+=1
-    }
+    end
     if a.size == b.size
       return 0
     else
