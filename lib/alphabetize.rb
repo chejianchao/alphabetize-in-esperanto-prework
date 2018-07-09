@@ -14,8 +14,10 @@ def alphabetize(arr)
     while idx < a.size
       c = a[idx]
       if idx < b.size
+        
         c1 = alpha_hash[a[idx]]
         c2 = alpha_hash[b[idx]]
+        puts a[idx], b[idx], c1 ,c2
         if c1<c2
           -1
           break
