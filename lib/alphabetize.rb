@@ -18,6 +18,10 @@ def alphabetize(arr)
         
         c1 = alpha_hash[a[idx]]
         c2 = alpha_hash[b[idx]]
+        if c1==nil || c2 == nil
+          idx+=1
+          continue
+        end
         puts "#{a[idx]},  #{c1} ,#{b[idx]},#{c2}"
         if c1 < c2
           res = -1
