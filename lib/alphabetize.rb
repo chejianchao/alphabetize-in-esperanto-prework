@@ -1,7 +1,7 @@
 def alphabetize(arr)
   # code here
   ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  ALPHA    = "ABabcdefghijklmnopqrstuvwxyz"
+  ALPHA  = "ABabcdefghijklmnopqrstuvwxyz"
   alpha_hash = {}
   ALPHABET.each_with_index{|c, idx|
     alpha_hash[c] = ALPHA[idx]
