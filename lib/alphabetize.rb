@@ -17,17 +17,19 @@ def alphabetize(arr)
         c1 = alpha_hash[a[idx]]
         c2 = alpha_hash[b[idx]]
         if c1<c2
-          return 1
+          1
+          break
         elsif c1 > c2
-          return -1
+          -1
+          break
         end
       end
       idx+=1
     end
     if a.size == b.size
-      return 0
+      0
     else
-      return -1
+      -1
     end
   }
 end
