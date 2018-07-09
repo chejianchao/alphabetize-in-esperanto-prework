@@ -22,7 +22,7 @@ def alphabetize(arr)
           idx+=1
           next
         end
-        puts "#{a[idx]},  #{c1} ,#{b[idx]},#{c2}"
+        
         if c1 < c2
           res = -1
           break
