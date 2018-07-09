@@ -1,5 +1,8 @@
 def alphabetize(arr)
   # code here
   ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  arr.sort_by
+  
+  arr.sort{|a,b|
+    
+  }
 end
