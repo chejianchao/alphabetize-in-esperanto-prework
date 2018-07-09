@@ -17,10 +17,10 @@ def alphabetize(arr)
         c1 = alpha_hash[a[idx]]
         c2 = alpha_hash[b[idx]]
         if c1<c2
-          1
+          -1
           break
         elsif c1 > c2
-          -1
+          1
           break
         end
       end
@@ -29,7 +29,7 @@ def alphabetize(arr)
     if a.size == b.size
       0
     else
-      -1
+      1
     end
   }
 end
