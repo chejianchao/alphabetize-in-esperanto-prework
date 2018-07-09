@@ -7,9 +7,9 @@ def alphabetize(arr)
     alpha_hash[c] = alpha2[idx]
   }
   arr.sort{|a,b|
-    a.each_with_idx{|c, idx|
-      
-      
+    idx = 0
+    while idx < a.size
+      c = a[idx]
       if idx < b.size
         c1 = alpha_hash[a[idx]]
         c2 = alpha_hash[b[idx]]
@@ -19,11 +19,12 @@ def alphabetize(arr)
           return -1
         end
       end
-      if a.size == b.size
-        return 0
-      else
-        return -1
-      end
+      idx+=1
     }
+    if a.size == b.size
+      return 0
+    else
+      return -1
+    end
   }
 end
