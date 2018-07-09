@@ -11,6 +11,7 @@ def alphabetize(arr)
   end
   arr.sort{|a,b|
     idx = 0
+    res = -2
     while idx < a.size
       c = a[idx]
       if idx < b.size
@@ -19,19 +20,22 @@ def alphabetize(arr)
         c2 = alpha_hash[b[idx]]
         puts "#{a[idx]}, #{b[idx]}, #{c1} ,#{c2}"
         if c1<c2
-          -1
+          res = -1
           break
         elsif c1 > c2
-          1
+          res = 1
           break
         end
       end
       idx+=1
     end
-    if a.size == b.size
-      0
-    else
-      1
+    if res == -2
+      if a.size == b.size
+        res = 0
+      else
+        res = 1
+      end
     end
+    res
   }
 end
