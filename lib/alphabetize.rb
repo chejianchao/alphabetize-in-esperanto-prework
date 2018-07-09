@@ -3,9 +3,12 @@ def alphabetize(arr)
   alpha1 = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   alpha2 = "ABabcdefghijklmnopqrstuvwxyz"
   alpha_hash = {}
-  alpha1.each_with_index{|c, idx|
+  idx = 0
+  while idx<alpha1.size
+    c = alpha1[idx]
     alpha_hash[c] = alpha2[idx]
-  }
+    idx+=1
+  end
   arr.sort{|a,b|
     idx = 0
     while idx < a.size
