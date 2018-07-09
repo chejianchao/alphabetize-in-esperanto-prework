@@ -8,11 +8,16 @@ def alphabetize(arr)
   }
   arr.sort{|a,b|
     a.each_with_idx{|c, idx|
+      
+      
       if idx < b.size
-        if a[idx]<b[idx]
+        c1 = alpha_hash[a[idx]]
+        c2 = alpha_hash[b[idx]]
+        if c1<c2
           return 1
-        elsif a[idx] > b[idx]
+        elsif c1 > c2
           return -1
+        end
       end
       if a.size == b.size
         return 0
